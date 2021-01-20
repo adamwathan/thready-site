@@ -1,0 +1,15 @@
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title><%= current_page.data.title_tag || current_page.data.title || site_title %></title>
+
+<%= partial "global-partials/meta" %>
+
+<%= stylesheet_link_tag "style" %>
+<%= javascript_include_tag "site.min" %>
+
+<%= favicon_tag 'favicon/favicon.ico' %>
+
+<%= partial "global-partials/scripts" %>

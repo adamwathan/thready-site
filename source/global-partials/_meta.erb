@@ -1,0 +1,28 @@
+<% if current_page.data.meta_description.present? %>
+  <meta name="description" content="<%= current_page.data.meta_description %>" />
+<% end %>
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="<%= current_page.data.title_tag || current_page.data.title || site_title %>" />
+<meta property="og:description" content="<%= current_page.data.meta_description %>" />
+<meta property="og:url" content="<%= site_url %>" />
+<meta property="og:site_name" content="<%= site_title %>" />
+<% if current_page.data.meta_image.present? %>
+  <meta property="og:image:secure_url" content="<%= site_url %>/images/<%= current_page.data.meta_image %>" />
+  <meta property="og:image" content="<%= site_url %>/images/<%= current_page.data.meta_image %>" />
+<% else %>
+  <meta property="og:image:secure_url" content="<%= site_url %>/images/meta/og-image.jpg" />
+  <meta property="og:image" content="<%= site_url %>/images/meta/og-image.jpg" />
+<% end %>
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="<%= current_page.data.meta_description || site_description %>" />
+<meta name="twitter:title" content="<%= current_page.data.title_tag || current_page.data.title || site_title %>" />
+<meta name="twitter:site" content="<%= twitter_username %>" />
+<% if current_page.data.meta_image.present? %>
+  <meta name="twitter:image" content="<%= site_url %>/images/<%= current_page.data.meta_image %>" />
+<% else %>
+  <meta name="twitter:image" content="<%= site_url %>/images/meta/og-image.jpg" />
+<% end %>
+<meta name="twitter:creator" content="<%= twitter_username %>" />
