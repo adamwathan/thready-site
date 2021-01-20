@@ -1,19 +1,19 @@
 helpers do
 
   def site_url
-    "https://website.com"
+    "https://thready.io"
   end
 
   def site_title
-    "Website Name"
+    "Thready"
   end
 
   def site_description
-    "Default description"
+    "The easiest way to draft, schedule and publish Twitter threads."
   end
 
   def twitter_username
-    "@username"
+    "@thready_app"
   end
 
 end
