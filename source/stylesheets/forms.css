@@ -1,0 +1,17 @@
+form {
+  @apply mb-8;
+}
+
+label {
+  @apply block text-sm font-medium text-gray-500;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  @apply shadow-sm focus:ring-blue-300 focus:border-blue-300 block w-full sm:text-sm border-gray-300 rounded-md;
+}
+
+select {
+  @apply shadow-sm block w-full border-gray-300 rounded-md p-3 focus:ring-blue-300 focus:border-blue-300 sm:text-sm;
+}

@@ -1,0 +1,73 @@
+h1 {
+  @apply font-headers font-weight-600 text-3xl mb-4 leading-snug;
+}
+@screen md {
+  h1 {
+    @apply text-4xl;
+  }
+}
+
+h2 {
+  @apply font-weight-600 text-white text-lg mb-8 pt-4;
+}
+@screen md {
+  h2 {
+    @apply text-xl;
+  }
+}
+
+h3 {
+  @apply text-base text-white mb-6 pt-4 font-weight-600;
+}
+
+p {
+  @apply mb-6;
+}
+
+strong {
+  @apply text-white font-weight-600;
+}
+
+hr {
+  @apply border border-black-light my-16 w-1/6;
+  border-width: 3px;
+}
+
+ul {
+  @apply list-disc ml-5 mb-6;
+}
+
+ul ul,
+ul ul ul,
+ul ul ul ul {
+  @apply mt-4 mb-4;
+}
+
+ol {
+  @apply list-decimal ml-4 mb-6;
+}
+
+ol ol,
+ol ol ol,
+ol ol ol ol {
+  @apply mt-4 mb-4;
+}
+
+li {
+  @apply mb-2;
+}
+
+code {
+  @apply bg-grey-100 rounded-sm text-sm inline-block;
+  padding: 1px 6px;
+}
+
+figure {
+  @apply mb-8 pt-4;
+}
+
+blockquote {
+  @apply border border-0 border-l-8 border-grey-100 pl-4 italic;
+}
+
+

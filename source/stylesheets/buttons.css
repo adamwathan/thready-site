@@ -1,0 +1,19 @@
+.btn {
+  @apply cursor-pointer inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-yellow-500 hover:bg-yellow-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-600;
+}
+
+.btn.btn-blue {
+  @apply bg-blue-300 hover:bg-dark-blue focus:ring-dark-blue;
+}
+
+.btn.btn-disabled {
+  @apply bg-gray-100 cursor-default hover:bg-gray-100 focus:ring-gray-100;
+}
+
+.btn.btn-small {
+  @apply py-1 px-2;
+}
+
+.btn.btn-secondary {
+  @apply inline-flex items-center px-4 py-2 border-gray-100 rounded-md text-sm font-medium text-blue-400 bg-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-100;
+}
