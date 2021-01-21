@@ -1,3 +1,23 @@
+html {
+  font-size: 20px;
+}
+
+body {
+  @apply bg-blue-300;
+}
+
+a {
+  @apply text-yellow-600 font-weight-400;
+}
+a:hover,
+a:active {
+  @apply text-orange;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply text-grey-200 font-weight-700;
+}
+
 h1 {
   @apply font-headers font-weight-600 text-3xl mb-4 leading-snug;
 }
