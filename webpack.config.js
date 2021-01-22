@@ -1,11 +1,11 @@
-const path = require('path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const path = require('path')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
   mode: 'development',
   entry: {
     site: ['./source/javascripts/site.js'],
-    style: ['./source/stylesheets/site.css.scss'],
+    style: ['./source/stylesheets/site.css'],
   },
   output: {
     path: path.resolve(__dirname, '.tmp/dist'),
@@ -15,24 +15,17 @@ module.exports = {
     rules: [
       {
         test: /\.(sa|sc|c)ss$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          'css-loader',
-          'postcss-loader',
-          'sass-loader'
-        ],
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader'],
       },
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
         options: {
-          plugins: [
-            require('@babel/plugin-proposal-class-properties'),
-          ]
-        }
-      }
-    ]
+          plugins: [require('@babel/plugin-proposal-class-properties')],
+        },
+      },
+    ],
   },
   plugins: [new MiniCssExtractPlugin()],
-};
+}

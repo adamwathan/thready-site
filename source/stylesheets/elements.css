@@ -7,19 +7,21 @@ body {
 }
 
 a {
-  @apply text-yellow-600 font-weight-400;
+  @apply text-yellow-600 font-normal;
 }
 a:hover,
 a:active {
-  @apply text-orange;
+  @apply text-orange-500;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  @apply text-grey-200 font-weight-700;
+  @apply text-gray-200 font-bold;
 }
 
 h1 {
-  @apply font-headers font-weight-600 text-3xl mb-4 leading-snug;
+  /* TODO: I don't know what font-headers is  */
+  /* @apply font-headers font-semibold text-3xl mb-4 leading-snug; */
+  @apply font-semibold text-3xl mb-4 leading-snug;
 }
 @screen md {
   h1 {
@@ -28,7 +30,7 @@ h1 {
 }
 
 h2 {
-  @apply font-weight-600 text-white text-lg mb-8 pt-4;
+  @apply font-semibold text-white text-lg mb-8 pt-4;
 }
 @screen md {
   h2 {
@@ -37,7 +39,7 @@ h2 {
 }
 
 h3 {
-  @apply text-base text-white mb-6 pt-4 font-weight-600;
+  @apply text-base text-white mb-6 pt-4 font-semibold;
 }
 
 p {
@@ -45,11 +47,13 @@ p {
 }
 
 strong {
-  @apply text-white font-weight-600;
+  @apply text-white font-semibold;
 }
 
 hr {
-  @apply border border-black-light my-16 w-1/6;
+  /* TODO: border-black-light doesn't exist */
+  /* @apply border border-black-light my-16 w-1/6; */
+  @apply border my-16 w-1/6;
   border-width: 3px;
 }
 
@@ -78,7 +82,7 @@ li {
 }
 
 code {
-  @apply bg-grey-100 rounded-sm text-sm inline-block;
+  @apply bg-gray-100 rounded-sm text-sm inline-block;
   padding: 1px 6px;
 }
 
@@ -87,7 +91,7 @@ figure {
 }
 
 blockquote {
-  @apply border border-0 border-l-8 border-grey-100 pl-4 italic;
+  @apply border border-0 border-l-8 border-gray-100 pl-4 italic;
 }
 
 

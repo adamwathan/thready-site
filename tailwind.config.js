@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
@@ -6,6 +8,7 @@ module.exports = {
       white: "#ffffff",
       black: "#000000", 
       transparent: 'transparent',
+      orange: colors.orange, // TODO: Use your own orange
 
       "dark-blue": "#102542",
       blue: {
@@ -25,6 +28,7 @@ module.exports = {
         10: "#F3F4F7",
         50: "#E6E8EF",
         100: "#C1C5D7",
+        200: "#C1C5D7", // TODO: Not sure what color you want here
         300: "#8F97B7",
         500: "#5F6A95",
         700: "#383E57",
